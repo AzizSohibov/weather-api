@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="site_header">
+            <div class="container">
+                <div class="logo">
+                    My Weather
+                </div>
+                <form action="#" class="choose_city_form" id="searchForm">
+                    <input type="text" id="city_county_input" placeholder="City, Country">
+                    <button type="submit"></button>
+                </form>
+
+            </div>
+        </header>
+        <nav class="menu">
+            <ul class="container">
+                <li class="active" item_name="today">Today</li>
+                <li item_name="five_days">5-day forecast</li>
+            </ul>
+        </nav>
+
+        <div class="content">
+
+            <div id="error404"></div>
+            <div class="container" id="all_inside_blocks">
+                <div class="today">
+
+                    <div class="current_weather section">
+                        <header class="current_weather__header header">
+                            <div class="left_side">
+                                Current weather
+                            </div>
+                            <div class="right_side current_date">Today</div>
+                        </header>
+                        <div class="current_weather__body body">
+                            <div class="desc" id="weather_desc"></div>
+                            <div id="current_temp" class="current_temp"></div>
+                            <div class="other_details" id="other_details"></div>
+                        </div>
+                    </div>
+                    <div class="hourly section">
+                        <header class="hourly__header header">
+                            <div class="left_side">
+                                Hourly
+                            </div>
+                        </header>
+                        <div class="hourly__body body" id="hours_data_info">
+                            <div class="item">
+                                <div class="hour">
+                                    <strong>TODAY</strong>
+                                </div>
+                                <div class="icon">
+ 
+                                </div>
+                                <div class="forecast">
+                                    Forecast
+                                </div>
+                                <div class="temperature">
+                                    Temp (&#176;С)
+                                </div>
+                                <div class="real_feel">
+                                    RealFeel
+                                </div>
+                                <div class="wind">
+                                    Wind (km/h)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="five_days">
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="script.js" type="module"></script>
+</body>
+</html>
